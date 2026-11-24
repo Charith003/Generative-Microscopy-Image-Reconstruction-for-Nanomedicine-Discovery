@@ -624,38 +624,6 @@ The web application provides access to the image analysis, screening dashboard, 
 
 ---
 
-## Limitations
-
-The current implementation is a research prototype.
-
-- The React application's `runMockAnalysis()` function generates simulated analysis metrics.
-- The frontend does not currently invoke the trained TensorFlow or PyTorch models as a live inference service.
-- Some optimization metrics are calculated through score transformations rather than a separately trained optimization model.
-- Image enhancement in the frontend uses browser-based image processing.
-- Drug prediction outputs are exploratory computational estimates and not experimentally validated drug efficacy or toxicity results.
-- The web application's history and saved records are stored locally in the browser.
-- Research notebook results depend on the dataset, preprocessing, training configuration, and evaluation procedure.
-
-These limitations identify the distinction between research experiments, prototype interfaces, and a fully integrated scientific inference system.
-
----
-
-## Future Enhancements
-
-- Integrate trained NanoVisionNet-X models into the live application.
-- Develop a FastAPI inference backend.
-- Implement real-time microscopy image reconstruction.
-- Improve multi-task segmentation and morphology prediction.
-- Add explainable AI using Grad-CAM and feature attribution.
-- Introduce robust experimental benchmarking.
-- Integrate validated molecular property datasets.
-- Implement a scalable database for analysis history.
-- Add authenticated users and research project management.
-- Support batch processing and downloadable scientific reports.
-- Improve reproducibility and model version tracking.
-
----
-
 ## Applications
 
 Potential research applications include:
